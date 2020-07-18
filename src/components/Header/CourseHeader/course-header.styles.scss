@@ -1,0 +1,88 @@
+.course-header{
+    background: #273044;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 22px 15px 17px 15px;
+    
+    .logo_container{
+        width: 253px;
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 0 15px;
+    }
+
+    .back-to-dashboard_container{
+        flex: 0 0 50%;
+        max-width: 50%;
+        align-self: flex-end;
+
+        h5{
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        a{
+            font-size: 1.3em;
+            text-decoration: none;
+            color: rgba(255, 255, 255, .5);
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .right-panel{
+        flex: 0 0 25%;
+        max-width: 25%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 15px;
+
+        .user-img_container{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            color: rgba(68, 68, 68, .5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .username_container{
+            display: flex;
+            align-items: center;
+
+            h5{
+                font-size: 1em;
+                margin: 0;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            .fa-caret-down{
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+
+        &>.fa{
+            font-size: 2em;
+            cursor: pointer;
+
+            &:nth-child(3){
+                margin: 0 20px;
+                color: red;
+            }
+
+            &:nth-child(4){
+                color: blue;
+            }
+        }
+    }
+
+}
