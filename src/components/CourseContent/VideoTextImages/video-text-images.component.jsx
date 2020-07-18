@@ -12,12 +12,11 @@ export class VideoTextImages extends Component {
         <h5 className="course-section-content-title text-center mb-5">
           Realistic Graphic on UE4
         </h5>
-        {/* <ReactPlayer style={{margin:'0 auto', width:'100%'}} url={Introduction} controls={true} /> */}
-        <div className="embed-responsive embed-responsive-16by9">
-            <video controls>
-                <source src={Introduction} type="video/mp4"/>
-            </video>
-        </div>
+        <ReactPlayer style={{ width:'100%',margin:'0 auto'}} url={"https://www.youtube.com/watch?v=HrUtZ60clrY"} controls={true} />
+        {/* <div className="embed-responsive embed-responsive-16by9">
+            <iframe controls src={"https://www.youtube.com/embed/watch?v=HrUtZ60clrY"}>
+            </iframe>
+        </div> */}
 
         <p className="course-section-description mt-3">
           <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Architecto
