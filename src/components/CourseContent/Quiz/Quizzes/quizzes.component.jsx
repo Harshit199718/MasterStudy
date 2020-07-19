@@ -4,7 +4,7 @@ export class Quizzes extends Component {
   render() {
     return (
       <div className="quizzes d-flex">
-        <div className="answered-correctly_container">
+        <div className="answered-correctly_container align-self-center">
           <div>
             <i className="fa fa-thumbs-o-up"></i>
             <h3 className="correct-percentage">80%</h3>

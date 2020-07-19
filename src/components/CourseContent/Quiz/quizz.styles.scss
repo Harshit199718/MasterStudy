@@ -1,12 +1,12 @@
 .quizz{
     .quizz-header{
-        width: 60%;
+        width: 66.66%;
         font-size: 1.3em;
         padding: 0 5px;
     }
 
     .answered-correctly_container{
-        width: 40%;
+        width: 33.334%;
         display: flex;
         justify-content: center;
 
@@ -15,7 +15,7 @@
             height: 200px;
             border-radius: 50%;
             overflow: visible;
-            background: lightseagreen;
+            background: #385bce;
             color: #fff;
             display: flex;
             flex-direction: column;

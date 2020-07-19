@@ -1,0 +1,32 @@
+.course-footer{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: lightseagreen;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 46.4%;
+    transform: translateX(-50%);
+    width: calc(50%);
+
+    a{
+        color: #fff;
+
+        span{
+            margin: 0 10px;
+        }
+    }
+
+    button{
+        border: none;
+        outline: none;
+        background: #fff;
+        border-radius: 2px;
+        padding: 10px 20px;
+        color: lightseagreen;
+        font-weight: 900;
+    }
+}

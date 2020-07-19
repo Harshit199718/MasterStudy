@@ -6,7 +6,7 @@ import Quizzes from "./Quizzes/quizzes.component";
 export class Quizz extends Component {
   render() {
     return (
-      <div className="quizz">
+      <div className="quizz mr-5">
         <h5 className="quizz-header mb-0 mt-5 ml-auto">Quizzes & Assignments, Quiz 3</h5>
         <QuizzDescription/>
         <Quizzes/>

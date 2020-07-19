@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
-import Introduction from "../../../Promo.mp4";
+import CourseFooter from "../../CourseFooter/course-footer.component";
+// import Introduction from "../../../Promo.mp4";
 
 export class VideoTextImages extends Component {
   render() {
@@ -32,6 +33,8 @@ export class VideoTextImages extends Component {
           ducimus. Esse itaque consequatur libero vitae nisi modi enim a quas
           vero amet.
         </p>
+
+        <CourseFooter/>
       </div>
     );
   }

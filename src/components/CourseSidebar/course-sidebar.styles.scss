@@ -43,6 +43,10 @@
                         font-size: 1.5em;
                     }
 
+                    .fa-file{
+                        color: lightseagreen;
+                    }
+
                     .content-title{
                         font-size: 1.2em;
 
@@ -82,8 +86,7 @@
     max-height: 0;
     // transform: scaleY(0);
     transition-property:max-height;
-    transition-duration: 2s;
-    transition-delay: 0s!important;
+    transition-duration: .5s;
 }
 
 .ht-auto{
@@ -91,5 +94,4 @@
     max-height: 1000px!important;
     transition-property:max-height!important;
     transition-duration: 2s;
-    transition-delay: 0s!important;
 }

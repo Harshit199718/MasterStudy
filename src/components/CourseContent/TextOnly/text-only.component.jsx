@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import './text-only.styles.scss'
+import CourseFooter from "../../CourseFooter/course-footer.component";
 
 export class TextOnly extends Component {
   render() {
     return (
-      <div className="text-only">
+      <div className="text-only mr-5">
         <div className="section-title-and-lecture">
           <h5>Introduction, Lecture 2</h5>
         </div>
@@ -33,6 +34,8 @@ export class TextOnly extends Component {
           aspernatur, cupiditate, aut animi excepturi alias dicta amet ipsa,
           vitae reiciendis quasi?
         </p>
+
+        <CourseFooter/>
       </div>
     );
   }

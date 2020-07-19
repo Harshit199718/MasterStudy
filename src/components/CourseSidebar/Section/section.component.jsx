@@ -24,7 +24,7 @@ export class Section extends Component {
                                 </div>
                                 <div className={`section-content ${openSection?'ht-auto':'ht-0'}`}>
                                     <div className="content d-flex align-items-center">
-                                        <i className="fa fa-play-circle"></i>
+                                        <i className={`fa fa-${this.props.QuizzSection?'file':'play-circle'}`}></i>
                                         <h5 className="content-title m-0">
                                             <span className='s-no'>1</span>
                                             Realistic Graphic on...
@@ -35,7 +35,7 @@ export class Section extends Component {
                                     </div>
 
                                     <div className="content d-flex align-items-center">
-                                        <i className="fa fa-play-circle"></i>
+                                        <i className={`fa fa-${this.props.QuizzSection?'file':'play-circle'}`}></i>
                                         <h5 className="content-title m-0">
                                             <span className='s-no'>2</span>
                                             Nvidea New Technol...

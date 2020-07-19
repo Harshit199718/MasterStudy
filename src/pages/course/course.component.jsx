@@ -3,6 +3,7 @@ import CourseHeader from '../../components/Header/CourseHeader/course-header.com
 import CourseSidebar from '../../components/CourseSidebar/course-sidebar.component'
 import './course.styles.scss'
 import CourseContent from '../../components/CourseContent/course-content.component'
+import CourseFooter from '../../components/CourseFooter/course-footer.component'
 
 export class Course extends Component {
     render() {
