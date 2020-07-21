@@ -3,14 +3,18 @@ import './text-only.styles.scss'
 import CourseFooter from "../../CourseFooter/course-footer.component";
 
 export class TextOnly extends Component {
+  constructor(props){
+    super(props)
+  }
   render() {
+    console.log('......',this.props)
     return (
-      <div className="text-only mr-5">
+      <div className={`text-only ${this.props.toggleRightSidebar?'ml-auto mr-5':'mx-auto'}`}>
         <div className="section-title-and-lecture">
-          <h5>Introduction, Lecture 2</h5>
+          <h5>{this.props.sectionType}, Lecture {this.props.lectureNo} </h5>
         </div>
         <h2 className="section-content-title">
-          Nvidea New Technologies Slides
+          {this.props.sectionHead}
         </h2>
 
         <p className="section-content-description mt-2">
@@ -35,7 +39,7 @@ export class TextOnly extends Component {
           vitae reiciendis quasi?
         </p>
 
-        <CourseFooter/>
+        <CourseFooter color={'#000'}/>
       </div>
     );
   }

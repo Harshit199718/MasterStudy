@@ -1,73 +1,31 @@
 import React, { Component } from "react";
+import SingleSelect from "./SingleSelect/single-select.component";
+import MultiSelect from "./MultiSelect/multi-select.component";
+import DragSelect from "./DragSelect/drag-select.component";
+import QuizzResults from "../../../Popups/QuizzResults/quizz-results.component";
 
 export class Quizzes extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      quizzResult:'',
+      openResultPopup:false
+    }
+  }
   render() {
+    const {quizzResult,openResultPopup} =this.state
     return (
-      <div className="quizzes d-flex">
-        <div className="answered-correctly_container align-self-center">
-          <div>
-            <i className="fa fa-thumbs-o-up"></i>
-            <h3 className="correct-percentage">80%</h3>
-            <h5 className="answered-correctly-text">Answered correctly</h5>
-          </div>
+      <div className="quizzes">
+        <div className="quizzes_container ml-auto">
+          <MultiSelect />
+          <SingleSelect />
+          <DragSelect />
+          <button className="submit-quizz-btn" onClick={()=> this.setState({quizzResult:61,openResultPopup:true})}>
+            <div className="btn-circle"></div>
+            Submit Quizz
+          </button>
         </div>
-        <div className="quizzes_container">
-            <div className='mb-4'>
-                <h5 className="question mb-3">
-                    Which of the indicated programming languages can create mobile sentences?
-                </h5>
-                <div className="options">
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>Javascript</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>C#</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>PHP</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>Java</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div className='mb-4'>
-                <h5 className="question mb-3">
-                    Which of the indicated programming languages can create mobile sentences?
-                </h5>
-                <div className="options">
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>Javascript</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>C#</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>PHP</span>
-                    </div>
-
-                    <div className="option mb-2">
-                        <input type="checkbox"/>
-                        <span className='text-white text-bold ml-2'>Java</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <QuizzResults quizzResult={quizzResult} openResultPopup={openResultPopup} closePopup={(obj)=> this.setState(obj)} />
       </div>
     );
   }
