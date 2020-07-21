@@ -32,7 +32,7 @@ export class Section extends Component {
             return (
               <div
                 className="content d-flex align-items-center"
-                onClick={() => this.props.setToPlay({ toPlay: title,sectionHead:title,lectureNo:i + 1,sectionType:this.props.sectionType,rightSidebar: title=="Live Stream Lesson"&&false })}
+                onClick={() => this.props.setToPlay({ toPlay: title,sectionHead:title,lectureNo:i + 1,sectionType:this.props.sectionType,rightSidebar: title=="Live Stream Lesson"?false:true })}
               >
                 <i
                   className={`fa fa-${

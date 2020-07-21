@@ -51,11 +51,13 @@
             justify-content: center;
             align-items: center;
             font-size: 1.5em;
+            z-index: 101;
         }
 
         .username_container{
             display: flex;
             align-items: center;
+            position: relative;
 
             h5{
                 font-size: 1em;
@@ -67,6 +69,32 @@
             .fa-caret-down{
                 margin-left: 5px;
                 cursor: pointer;
+            }
+
+            .user-dropdown{
+                position: absolute;
+                left: -20%;
+                top: 200%;
+                background: #273044;
+                z-index: 100;
+                width: 200%;
+                border-radius: 0 0 10px 10px;
+                overflow: hidden;
+                transform-origin: top;
+
+                a{
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.2em;
+                    font-weight: 900;
+                    display: block;
+
+                    &:first-child{
+                        padding-bottom: 0;
+                        margin-bottom: 5px;
+                    }
+                }
             }
         }
 

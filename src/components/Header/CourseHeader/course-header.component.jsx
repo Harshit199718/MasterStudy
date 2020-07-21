@@ -3,7 +3,15 @@ import './course-header.styles.scss'
 import { Link } from 'react-router-dom'
 
 export class CourseHeader extends Component {
+
+    constructor(props){
+        super(props)
+        this.state={
+            userDropdown: false
+        }
+    }
     render() {
+        const {userDropdown} = this.state
         return (
             <div className='course-header'>
                 <div className="logo_container">
@@ -21,9 +29,13 @@ export class CourseHeader extends Component {
                         <i className="fa fa-user-o"></i>
                     </div>
                     <div className="username_container">
-                        <h5>Hey, Demo in...
+                        <h5 onClick={()=> this.setState({userDropdown: !this.state.userDropdown})}>Hey, Demo in...
                         <i className="fa fa-caret-down"></i>
                         </h5>
+                        <div className="user-dropdown" style={userDropdown?{transform:'scaleY(1)',transition:'.2s'}:{transform:'scaleY(0)',transition:'.2s'}}>
+                            <Link>Account</Link>
+                            <Link>Logout</Link>
+                        </div>
                     </div>
                     <i className="fa fa-heart"></i>
                     <i className="fa fa-cog"></i>

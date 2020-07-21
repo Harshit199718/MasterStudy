@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./live-stream.styles.scss";
 import ReactPlayer from "react-player";
 import userImg from '../../../assets/userImg.jpg'
+import LiveStreamFooter from "./LiveStreamFooter/live-strem-footer.component";
 
 export class LiveStream extends Component {
   render() {
@@ -130,6 +131,7 @@ export class LiveStream extends Component {
             </div>
           </div>
         </div>
+        <LiveStreamFooter/>
       </div>
     );
   }

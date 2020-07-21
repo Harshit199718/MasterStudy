@@ -6,6 +6,7 @@ import slide2 from "../../../assets/slide2.jpg";
 import slide3 from "../../../assets/slide3.jpg";
 import slide4 from "../../../assets/slide4.jpg";
 
+
 const images = [slide1, slide2, slide3, slide4];
 
 export class SlideLesson extends Component {
@@ -40,7 +41,24 @@ export class SlideLesson extends Component {
               })
             }
           ></i>
-          {images.map((image) => {
+          {/* <iframe src={`https://view.officeapps.live.com/op/embed.aspx?src=[https://localhost:3000/${coursedes}]`} frameborder="0"></iframe> */}
+          <iframe
+            src="https://onedrive.live.com/embed?cid=2D70A5A39C34FD1A&amp;resid=2D70A5A39C34FD1A%21106&amp;authkey=APYU06mFzR4ohIw&amp;em=2&amp;wdAr=1.7777777777777777"
+            width="100%"
+            height="auto"
+            frameborder="0"
+          >
+            This is an embedded{" "}
+            <a target="_blank" href="https://office.com">
+              Microsoft Office
+            </a>{" "}
+            presentation, powered by{" "}
+            <a target="_blank" href="https://office.com/webapps">
+              Office
+            </a>
+            .
+          </iframe>
+          {/* {images.map((image) => {
             return (
               <img
                 src={image}
@@ -51,7 +69,7 @@ export class SlideLesson extends Component {
                 }}
               />
             );
-          })}
+          })} */}
           <i
             className="fa fa-angle-right"
             onClick={() =>
