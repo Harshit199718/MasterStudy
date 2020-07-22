@@ -1,0 +1,29 @@
+.profile_container {
+  width: 950px;
+
+  .back-to-account{
+      text-decoration: none;
+      color: #000;
+      font-size: 1.2em;
+      font-weight: 900;
+      opacity: .7;
+
+      .fa{
+          font-size: 1em;
+      }
+  }
+
+  .profile{
+      .profile-side-panel_container {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    
+      .profile-details_container {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 20px;
+      }
+  }
+
+}

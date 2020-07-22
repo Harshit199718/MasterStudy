@@ -1,0 +1,20 @@
+    .grey-input{
+        label{
+            display: block;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+        input,textarea{
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #eef1f7;
+            padding: 10px 8px;
+        }
+
+        textarea{
+            min-height: 100px;
+            resize: none;
+        }
+    }

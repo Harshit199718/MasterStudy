@@ -1,0 +1,58 @@
+.edit-profile {
+  .edit-profile_header {
+    font-size: 2.5em;
+    font-weight: 900;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .name-and-surname {
+    .name,
+    .surname {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .social-links,
+  .change-password {
+    .social-links_header {
+      font-size: 1.6em;
+      font-weight: 900;
+    }
+
+    .change-password_header {
+      font-size: 1.6em;
+      font-weight: 900;
+    }
+
+    .social-info {
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    .inputs_container {
+      padding: 25px 20px;
+      background: #eef1f7;
+
+      .inputs {
+        flex-wrap: wrap;
+
+        & > div {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+
+  .save-changes-btn {
+    border: none;
+    outline: none;
+    background: #195ec8;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

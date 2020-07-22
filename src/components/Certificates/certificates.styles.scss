@@ -1,0 +1,46 @@
+.certificates{
+
+    .certificates_header{
+        font-size: 2.5em;
+        font-weight: 900;
+    }
+
+    .certificates_container{
+        .top-certificate_container{
+            background: #eef1f7;
+            padding: 15px 10px;
+    
+            .course,.certificate{
+                font-size: 1em;
+                font-weight: 900;
+                margin: 0;
+            }
+        }
+
+        .certificate_container{
+
+            padding: 10px;
+            border: 1px solid #ebebeb;
+            .course{
+                font-size: 1em;
+                font-weight: 900;
+                margin: 0;
+            }
+
+            .certificate-download_container{
+                .certificate{
+                    margin: 0;
+                    font-size: 1em;
+                    text-decoration: none;
+                }
+
+                .copy-code{
+                    background: #eef1f7;
+                    color: #a1a4ac;
+                    padding: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

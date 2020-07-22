@@ -1,0 +1,86 @@
+.instructor-bio{
+
+    .instructor-type_container{
+
+        border-bottom: 1px solid #ebebeb;
+        .instructor-type{
+            font-weight: 900;
+        }
+
+        .social-links_container{
+            &>a{
+                text-decoration: none;
+
+                .link_container{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 5px;
+
+                    .fa{
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                }
+
+                .link_container-fb{
+                    background: #3b5998;
+                }
+
+                .link_container-insta{
+                    background: #c32aa3;
+                }
+
+                .link_container-g-plus{
+                    background: #db4437;
+                }
+            }
+        }
+    }
+
+    .bio_container{
+
+        border-bottom: 1px solid #ebebeb;
+        .bio_header{
+            font-size: 1.6em;
+            font-weight: 900;
+        }
+
+        .bio{
+            font-size: 1em;
+            opacity: .7;
+            line-height: 20px;
+        }
+    }
+
+    .instructor-courses_container{
+        .courses_header{
+            font-size: 1.6em;
+            font-weight: 900;
+        }
+
+        .courses{
+            flex-wrap: wrap;
+            .course{
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                margin-bottom: 20px;
+
+                &:nth-of-type(3n + 1){
+                    padding-right: 10px;
+                }
+
+                &:nth-of-type(3n + 2){
+                    padding: 0 5px;
+                }
+
+                &:nth-of-type(3n + 3){
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
