@@ -1,0 +1,25 @@
+.review{
+    .review_header{
+        font-size: 1em;
+        font-weight: 700;
+        font-weight: 100;
+    }
+
+    .rating_container{
+        .fa{
+            color: gold;
+            cursor: pointer;
+        }
+    }
+
+    .add-review-btn{
+        border: none;
+            outline: none;
+            background: #195EC8;
+            color: #fff;
+            font-size: .8em;
+            font-weight: 900;
+            padding: 10px 20px;
+            border-radius: 20px;
+    }
+}

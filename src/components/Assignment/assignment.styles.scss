@@ -1,0 +1,43 @@
+.assignment{
+    background: #fff;
+    height: 100%;
+    &>.fa-bell{
+        opacity: .4;
+        cursor: pointer;
+    }
+
+    .assignment-title{
+        font-size: 1.3em;
+        font-weight: 900;
+    }
+
+    .assignment-details_container{
+        .detail{
+            cursor: pointer;
+
+            .fa{
+                font-size: 1.3em;
+            }
+
+            .fa-bars{
+                font-size: 1.1em;
+            }
+
+            &:nth-child(1){
+                color: blue;
+            }
+
+            &:nth-child(2){
+                color: red;
+            }
+
+            &:nth-child(3){
+                color: lightgreen;
+            }
+
+            &:nth-child(4){
+                color: purple;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.view-course-announcement{
+    .announcement_container{
+        .announcement_header{
+            font-size: 2em;
+            font-weight: 100;
+        }
+
+        .date-of-announcement{
+            font-size: .8em;
+        }
+
+        .announcement-details_container{
+            .announcement-number{
+                font-size: .8em;
+            }
+
+            .announcement{
+                .announcement-heading,.announcement-description{
+                    font-size: 1em;
+                }
+
+                .announcement-heading{
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

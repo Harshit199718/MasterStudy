@@ -1,0 +1,45 @@
+.section-curr{
+    .section-title-and-number{
+        font-size: 2em;
+    }
+
+    .section-content{
+    height: 50px;
+
+    background: #f0f4fa;
+    cursor: pointer;
+
+        .content-title{
+            font-size: 1em;
+            font-weight: 900;
+
+            p{
+                font-size: .8em;
+                font-weight: 100;
+            }
+
+            .fa{
+                font-size: 1.2em;
+                color: #5775d5;
+            }
+        }
+
+        .preview-btn_container{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .preview-btn{
+                -webkit-appearance: none;
+                border: none;
+                outline: none;
+                height: 70%;
+                padding: 0 5px;
+                border-radius: 5px;
+                background:#4ed7a8;
+                color: #fff;
+                font-size: 1em;
+                font-weight: 900;
+            }
+        }
+    }
+}

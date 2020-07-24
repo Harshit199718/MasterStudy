@@ -1,0 +1,44 @@
+.add-course-faq{
+
+    .course-material-adder {
+        border: 1px solid #dbdbdb;
+        background: #f7f7f7;
+        cursor: pointer;
+        transition: .5s;
+    
+        .course-material-add-icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #195ec8;
+    
+          .fa {
+            color: #fff;
+            font-size: 1.2em;
+          }
+        }
+    
+        .course-material-add-text {
+          font-size: 1.3em;
+          font-weight: 500;
+        }
+    
+        &:hover {
+          border: 1px solid transparent;
+          background: #195ec8;
+    
+          .course-material-add-icon {
+            background: #fff;
+    
+            .fa {
+              color: #195ec8;
+              font-size: 1.2em;
+            }
+          }
+    
+          .course-material-add-text {
+            color: #fff;
+          }
+        }
+      }
+}

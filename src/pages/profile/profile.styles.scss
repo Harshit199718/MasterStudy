@@ -23,6 +23,51 @@
         flex: 0 0 80%;
         max-width: 80%;
         padding: 20px;
+
+        .assignments_container{
+
+          .assignments-header_container{
+            .assignments_header{
+              font-weight: normal;
+            }
+
+            .assignment-search{
+              width: 40%;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              label{
+                font-size: 1em;
+              }
+
+              input{
+                width: 40%;
+                outline: none;
+                border: 2px solid #ddd;
+                border-top: 1px solid rgba(0,0,0,.4);
+                padding: 5px;
+                font-size: .8em;
+              }
+            }
+          }
+
+          .assignments{
+            &>div:nth-of-type(3n + 1){
+              padding: 0;
+              padding-right: 10px;
+            }
+
+            &>div:nth-of-type(3n + 2){
+              padding: 0;
+              padding:0 5px;
+            }
+
+            &>div:nth-of-type(3n + 3){
+              padding: 0;
+              padding-left: 10px;
+            }
+          }
+        }
       }
   }
 

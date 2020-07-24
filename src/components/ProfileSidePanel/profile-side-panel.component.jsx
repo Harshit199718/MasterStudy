@@ -10,7 +10,7 @@ export class ProfileSidePanel extends Component {
 
   render() {
     return (
-      <div className="profile-side-panel">
+      <div className={`profile-side-panel`}>
         <div className="prof-img">
           <div className="profile-img_container">
             <img src={profile} alt="" />
@@ -51,7 +51,7 @@ export class ProfileSidePanel extends Component {
             </li>
             <li
               onClick={() =>
-                this.props.showPanel({ certificate: true, account: false, editProfile: false })
+                this.props.showPanel({ certificate: true, account: false, editProfile: false,assignment:false })
               }
               className="tab text-uppercase"
             >
@@ -60,7 +60,7 @@ export class ProfileSidePanel extends Component {
             </li>
             <li className="tab text-uppercase"
               onClick={() =>
-                this.props.showPanel({ certificate: false, account: false, editProfile: true })
+                this.props.showPanel({ certificate: false, account: false, editProfile: true,assignment:false })
               }
             >
               <i className="fa fa-cog mr-2"></i>
@@ -74,7 +74,11 @@ export class ProfileSidePanel extends Component {
               <i className="fa fa-users mr-2"></i>
               Groups
             </li>
-            <li className="tab text-uppercase">
+            <li className="tab text-uppercase"
+              onClick={() =>
+                this.props.showPanel({ certificate: false, account: false, editProfile: false,assignment:true })
+              }
+            >
               <i className="fa fa-book mr-2"></i>
               Assignments
             </li>

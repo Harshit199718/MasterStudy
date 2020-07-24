@@ -1,0 +1,91 @@
+.view-course{
+    width: 950px;
+    &>div{
+        min-height: 80vh;
+    }
+
+    .view-course-details_container{
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 0 20px;
+
+        .successfully-done-header_container{
+            .success-icon{
+                width: 25px;
+            }
+
+            .successfully-done_header{
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+        }
+
+        .course-title{
+            font-size: 3em;
+            opacity: .8;
+        }
+
+        .user-and-category_container{
+            .user_container{
+                .user-img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .user-type-and-name_container{
+                    .user-type{
+                        font-size: .8em;
+                        opacity: .7;
+                    }
+
+                    .username{
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            .category_container{
+                .category-icon{
+
+                    .fa{
+                        font-size: 2em;
+                        opacity: .6;
+                        color: blue;
+                    }
+                }
+
+                .category_container{
+                    .category_header{
+                        font-size: .8em;
+                        opacity: .7;
+                    }
+
+                    .category{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .tabs_container{
+            &>div{
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+
+    }
+
+    .view-course-sidebar_container{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

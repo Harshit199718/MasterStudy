@@ -1,0 +1,209 @@
+.view-course-sidebar{
+    .add-to-wish-list_container{
+        cursor: pointer;
+        .wish-list-icon{
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(0,0,0,.6);
+            border-radius: 50%;
+
+            .fa{
+                font-size: 1em;
+                color: red;
+            }
+        }
+    }
+
+    .continue-btn{
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        background: #195ec8;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 900;
+    }
+
+    .course-score-box{
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        .score{
+            font-size: 1em;
+
+            span{
+                font-weight: 900;
+            }
+        }
+
+        .completed-feature_container{
+            .completed-feature{
+                .fa{
+                    font-size: 1.5em;
+                }
+
+                .fa-play-circle{
+                    color: #f63757;
+                }
+
+                .fa-question-circle-o{
+                    color: #1ac89e;
+                }
+
+                .fa-file-text-o{
+                    color: #4188f5;
+                }
+
+                .feature{
+                    font-size: 1em;
+                    span{
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+    .download-certificate_container{
+        border: 1px solid #ebebeb;
+        border-top: 1px solid rgba(0,0,0,.3);
+        padding: 15px 0;
+        cursor: pointer;
+
+        .fa{
+            color: #4188f5;
+            font-size: 1.3em;
+        }
+
+        .download-certificate{
+            font-size: 1em;
+        }
+
+        &:hover{
+            color: #4188f5;
+        }
+    }
+
+    .course-details{
+        .detail{
+            border-bottom: 1px solid #ebebeb;
+            .total{
+                font-size: 1em;
+    
+                span{
+                    font-weight: 900;
+                }
+            }
+    
+            .fa{
+                font-size: 1.5em;
+                color: #4188f5;
+            }
+        }
+    }
+
+    .other-courses-and-working-hours_container{
+        border-top: 1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+
+        .other-courses_container{
+            .other-course{
+                .other-course-thumbnail{
+                    width: 50px;
+                    height: 50px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .other-course-desc{
+                    .other-course-title{
+                        font-size: .8em;
+                        font-weight: 900;
+                        line-height: normal;
+                    }
+
+                    .course-price-btn{
+                        border: none;
+                        outline: none;
+                        font-size: .7em;
+                        padding: 2px 5px;
+                        border-radius: 2px;
+                        color: #fff;
+                        font-weight: 900;
+                    }
+
+                    .paid{
+                        background: #195ec8;
+                    }
+
+                    .free{
+                        background: #10c45c;
+                    }
+
+                    .course-instructor{
+                        font-size: .6em;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+
+        .horizontal-target{
+            &>div{
+                height: 2px;
+                border-radius: 3px;
+                background: #195ec8;
+            }
+    
+            .small{
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
+    
+            .large{
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+    
+            
+        }
+
+        .archive_container{
+            .archive_header{
+                font-size: 1.1em;
+                font-weight: 900;
+            }   
+        }
+
+        .working-hours_container{
+            .working-hours_header{
+                font-size: 1.1em;
+                font-weight: 900;
+            }       
+
+            .shedule_container{
+                border-bottom: 1px solid #ebebeb;
+                h5{
+                    font-size: .8em;
+                }
+
+                .closed-btn{
+                    border: none;
+                        outline: none;
+                        font-size: .7em;
+                        padding: 2px 5px;
+                        border-radius: 2px;
+                        background: red;
+                        color: #fff;
+                        font-weight: 900;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.add-course-curr{
+    
+    .upload-scorm-package {
+        border-radius: 3px;
+        background: #f1f1f1;
+
+        .upload-scorm-package_header{
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+    
+        .choose-file-btn {
+          position: relative;
+          width: 100%;
+          color: #fff;
+          background: #195ec8;
+          border-radius: 5px;
+          padding: 10px;
+    
+          input[type="file"],
+          input[type="file"]::-webkit-file-upload-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            outline: none;
+            cursor: pointer;
+          }
+    
+          .fa {
+            font-size: 1.5em;
+          }
+    
+          .choose-file {
+            font-size: 1.3em;
+            font-weight: 900;
+          }
+        }
+
+        .scorm-package-text{
+            font-size: 1.2em;
+        }
+      }
+
+      .section-adder_container{
+          background: #F1F1F1;
+      }
+
+      .course-section-adder {
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        background: #f7f7f7;
+        cursor: pointer;
+  
+        .course-section-add-icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #195ec8;
+  
+          .fa {
+            color: #fff;
+            font-size: 1.2em;
+          }
+        }
+  
+        .course-section-add-text {
+          font-size: 1.3em;
+          font-weight: 500;
+        }
+  
+        &:hover {
+          border: 1px solid transparent;
+          background: #195ec8;
+  
+          .course-section-add-icon {
+            background: #fff;
+  
+            .fa {
+              color: #195ec8;
+              font-size: 1.2em;
+            }
+          }
+  
+          .course-section-add-text {
+            color: #fff;
+          }
+        }
+      }
+}

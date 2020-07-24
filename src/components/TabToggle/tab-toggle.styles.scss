@@ -1,0 +1,16 @@
+.tab-toggle{
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    cursor: pointer;
+    .tab-title{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+}
+
+.active-tab{
+    background: #fff!important;
+    border-top: 2px solid blue;
+    cursor: auto;
+}
