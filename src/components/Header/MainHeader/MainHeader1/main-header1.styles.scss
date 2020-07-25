@@ -1,0 +1,156 @@
+.main-header1{
+    .logo-and-links_container{
+        padding-top: 10px;
+        background: #333;
+    position: relative;
+
+        .main-header1-logo_container{
+            flex: 0 0 18%;
+            max-width: 18%;
+            padding-left: 10px;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .links_container{
+            flex: 77%;
+            max-width: 77%;
+
+            .link_container{
+                padding: 15px 30px;
+                cursor: pointer;
+                transition: .5s;
+                &>.fa{
+                    font-size: 3em;
+                    margin-bottom: 10px;
+                }
+
+                .link-text{
+                    font-size: 1.5em;
+                }
+
+                &:hover{
+                    background: #195ec8;
+                }
+
+                .sub-menu_container{
+                    width: 100%;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: rgba(10,74,154,.6);
+                    z-index: 50;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: .5s;
+
+                    .sub-menu-links_container{
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+
+                            .sub-menu-link{
+                            font-size: 1.5em;
+
+                                .fa{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .serach-course-input_container{
+                        width: 30%;
+                        border-radius: 4px;
+                        background: #F0F2F5;
+                        padding: 10px;
+
+                        input{
+                            flex: 0 0 90%;
+                            max-width: 90%;
+                            border: none;
+                            outline: none;
+                            background: none;
+                            font-size: 1.5em;
+                        }
+
+                        .fa{
+                            flex: 0 0 10%;
+                            max-width: 10%;
+                            font-size: 2em;
+                            color: #195ec8;
+                        }
+                    }
+                }
+            }
+
+            .business-and-marketing:hover{
+                .sub-menu_container{
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+            }
+
+            .computer-science:hover{
+                .sub-menu_container{
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+            }
+
+            .health-and-fitness:hover{
+                .sub-menu_container{
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+            }
+
+            .multi-media:hover{
+                .sub-menu_container{
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+            }
+        }
+
+        .user_container{
+            flex: 5%;
+            max-width: 5%;
+
+            .user{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #FF1F59;
+
+                .fa-user-o{
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+
+    .directions_container{
+        background: #F6F6F6;
+
+        .directions{
+        font-size: 11px;
+
+            .direction,.fa{
+                color: #aaa;
+                text-decoration: none;
+
+                &:hover{
+                    color: #ff1f59;
+                }
+            }
+
+            .fa{
+                color: #aaa;
+            }
+        }
+    }
+}
