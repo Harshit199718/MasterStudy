@@ -7,6 +7,7 @@ import AddCourseDesc from "../../components/Description/AddCourseDesc/add-course
 import AddCourseFAQ from "../../components/FAQ/AddCourseFAQ/add-course-faq.component";
 import AddCourseAnnouncement from "../../components/Announcement/AddCourseAnnouncement/add-course-announcement.component";
 import AddCourseCurr from "../../components/Curriculum/AddCourseCurr/add-course-curr.component";
+import AddCourseSidebar from "../../components/AddCourseSidebar/add-course-sidebar.component";
 
 export class AddCourse extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export class AddCourse extends Component {
           <div className="add-title_container">
             <DropInput />
           </div>
-          <div>
+          <div className="mt-3">
               <UserAndCategory insructorAdded={insructorAdded}/>
           </div>
 
@@ -143,10 +144,16 @@ export class AddCourse extends Component {
               Publish Course
           </button>
         </div>
-        <div className="add-course-sidebar_container"></div>
+
+        {/* Sidebar */}
+        <div className="add-course-sidebar_container">
+          <AddCourseSidebar/>
+        </div>
       </div>
     );
   }
 }
 
 export default AddCourse;
+
+
