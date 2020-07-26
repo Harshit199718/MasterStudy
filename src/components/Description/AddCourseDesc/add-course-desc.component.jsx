@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./add-course-desc.styles.scss";
 import TextEditor from "../../TextEditor/text-editor.component";
 import CourseDetailsAdder from "./CourseDetailsAdder/course-details-adder.component";
-import {uid} from 'react-uid';
 import uniqid from 'uniqid'
 
 export class AddCourseDesc extends Component {

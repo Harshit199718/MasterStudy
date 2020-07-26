@@ -11,7 +11,7 @@ function MainFooter(props) {
           : props.path == "/profile"||props.path == "/courses"
           ?"main-footer-diff"
           :""
-      } mt-5 ${props.path == "/course" ? "d-none" : ""}`}
+      } mt-5 ${props.path == "/course"||props.path == "/" ? "d-none" : ""}`}
     >
       <div className="footer-sections_container  d-flex mx-auto">
         <div className="footer-section footer-about">
