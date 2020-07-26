@@ -84,3 +84,38 @@
         }
     }
 }
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+    .instructor-bio{
+        text-align: center;
+        .instructor-type_container{
+            flex-direction: column;
+        }
+    
+        .bio_container{
+    
+            .bio_header{
+                font-size: 2.2em;
+            }
+    
+            .bio{
+                font-size: 1.5em;
+            }
+        }
+    
+        .instructor-courses_container{
+            .courses_header{
+                font-size: 2.2em;
+            }
+    
+            .courses{
+                .course{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

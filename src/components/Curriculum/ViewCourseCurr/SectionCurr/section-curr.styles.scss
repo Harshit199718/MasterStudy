@@ -1,45 +1,102 @@
-.section-curr{
-    .section-title-and-number{
-        font-size: 2em;
-    }
+.section-curr {
+  .section-title-and-number {
+    font-size: 2em;
+  }
 
-    .section-content{
+  .section-content {
     height: 50px;
 
     background: #f0f4fa;
     cursor: pointer;
 
-        .content-title{
-            font-size: 1em;
-            font-weight: 900;
+    .content-title {
+      font-size: 1em;
+      font-weight: 900;
 
-            p{
-                font-size: .8em;
-                font-weight: 100;
-            }
+      p {
+        font-size: 0.8em;
+        font-weight: 100;
+      }
 
-            .fa{
-                font-size: 1.2em;
-                color: #5775d5;
-            }
-        }
-
-        .preview-btn_container{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            .preview-btn{
-                -webkit-appearance: none;
-                border: none;
-                outline: none;
-                height: 70%;
-                padding: 0 5px;
-                border-radius: 5px;
-                background:#4ed7a8;
-                color: #fff;
-                font-size: 1em;
-                font-weight: 900;
-            }
-        }
+      .fa {
+        font-size: 1.2em;
+        color: #5775d5;
+      }
     }
+
+    .preview-btn_container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .preview-btn {
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        height: 70%;
+        padding: 0 5px;
+        border-radius: 5px;
+        background: #4ed7a8;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 900;
+      }
+    }
+  }
 }
+
+// media queries for devices under 768
+
+@media (max-width: 768px) {
+  .section-curr {
+    .section-content {
+      height: auto;
+
+      background: #f0f4fa;
+      cursor: pointer;
+
+      .content-title {
+        font-size: 1.3em;
+
+        p {
+          font-size: 1em;
+        }
+      }
+
+      .preview-btn_container {
+        .preview-btn {
+          padding: 5px 10px;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+
+// media queries for devices under 576
+
+@media (max-width: 576px) {
+    .section-curr {
+      .section-content {
+          flex-direction: column;
+          align-items: flex-start!important;
+  
+        .preview-btn_container {
+            margin-top: 10px;
+          .preview-btn {
+            font-size: 1.3em;
+          }
+
+          .duration{
+              font-size: 1.2em;
+          }
+        }
+
+        .total-questions{
+            font-size: 1.2em;
+            margin-top: 10px!important;
+        }
+      }
+    }
+  }
+  

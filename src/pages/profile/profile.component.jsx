@@ -64,16 +64,16 @@ export class Profile extends Component {
                                         </div>
                                     </div>
                                     <div className="assignments d-flex flex-wrap">
-                                        <div className="col-4 mb-2">
+                                        <div className="col-12 col-md-4 mb-2">
                                             <Assignment assignmentTitle="first assignment"/>
                                         </div>
-                                        <div className="col-4 mb-2">
+                                        <div className="col-12 col-md-4 mb-2">
                                             <Assignment assignmentTitle="first assignment"/>
                                         </div>
-                                        <div className="col-4 mb-2">
+                                        <div className="col-12 col-md-4 mb-2">
                                             <Assignment assignmentTitle="first assignment"/>
                                         </div>
-                                        <div className="col-4 mb-2">
+                                        <div className="col-12 col-md-4 mb-2">
                                             <Assignment assignmentTitle="first assignment"/>
                                         </div>
                                     </div>

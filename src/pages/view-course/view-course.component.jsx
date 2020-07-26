@@ -113,10 +113,6 @@ export class ViewCourse extends Component {
                             )
                           })
                         }
-                        {/* <ViewCourseFAQ/>
-                        <ViewCourseFAQ/>
-                        <ViewCourseFAQ/>
-                        <ViewCourseFAQ/> */}
                     </div>
                     :null
                 }

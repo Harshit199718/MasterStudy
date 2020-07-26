@@ -56,3 +56,53 @@
     border-radius: 20px;
   }
 }
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+  .edit-profile {
+    .edit-profile_header {
+      padding-bottom: 10px!important;
+    }
+  
+    .name-and-surname {
+      flex-wrap: wrap;
+      margin-top: 20px!important;
+      .name,
+      .surname {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+    }
+  
+    .social-links,
+    .change-password {
+  
+      .social-info {
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+  
+      .inputs_container {
+  
+        .inputs {
+          flex-wrap: wrap;
+  
+          & > div {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0!important;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  
+    .save-changes-btn {
+      width: 100%;
+    }
+  }
+  
+}

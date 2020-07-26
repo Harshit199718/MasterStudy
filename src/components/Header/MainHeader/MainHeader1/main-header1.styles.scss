@@ -120,7 +120,7 @@
             flex: 5%;
             max-width: 5%;
 
-            .user{
+            .user,.search{
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
@@ -129,6 +129,10 @@
                 .fa-user-o{
                     font-size: 1.6em;
                 }
+            }
+
+            .search{
+                display: none;
             }
         }
     }
@@ -150,6 +154,87 @@
 
             .fa{
                 color: #aaa;
+            }
+        }
+    }
+}
+
+
+// media queries under 1250
+
+@media (max-width: 1250px){
+    .main-header1{
+        .logo-and-links_container{
+            .main-header1-logo_container{
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+    
+            .links_container{
+                flex: 73%;
+                max-width: 73%;
+                justify-content: space-between!important;
+                padding: 0 10px;
+    
+                .link_container{
+    
+                    .link-text{
+                        display: none;
+                    }
+                }
+    
+            }
+    
+            .user_container{
+                flex: 7%;
+                max-width: 7%;
+    
+                .user{
+                    width: 45px;
+                    height: 45px;
+                    .fa-user-o{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+    .main-header1{
+        .logo-and-links_container{
+            padding: 10px 0!important;
+    
+            .main-header1-logo_container{
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+    
+            .links_container{
+                display: none!important;
+            }
+    
+            .user_container{
+                flex: 40%;
+                max-width: 40%;
+                justify-content: flex-end!important;
+
+                .user{
+                    margin: 0 10px;
+                }
+
+                .search{
+                    display: flex!important;
+                    width: 45px;
+                    height: 45px;
+
+                    .fa{
+                        font-size: 1.3em;
+                    }
+                }
             }
         }
     }

@@ -95,3 +95,102 @@
   }
 
 }
+
+// media queries under 768px
+
+@media (max-width: 768px){
+  .profile-side-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .prof-img {
+    width: 30%;
+  }
+
+  .username{
+      font-size: 2.5em;
+  }
+
+  .job-type{
+    font-size: 2em;
+}
+
+  .rating {
+    font-size: 2em
+  }
+
+  .total-reviews{
+      font-size: 1.5em;
+  }
+
+  .earning-history_container{
+    width: 30%;
+      .coin-icon{
+          width: 60px;
+      }
+
+      .total-coins_container{
+          padding: 0 5px;
+          text-align: left;
+
+          .total-coins{
+              font-size: 1.5em;
+          }
+
+          &>a{
+              font-size: 1.2em;
+          }
+      }
+  }
+
+  .my-message-btn_container{
+    width: 30%;
+      .my-message-btn{
+        width: 100%;
+        font-size: 1.5em;
+      }
+  }
+
+  .tabs_container{
+    width: 30%;
+      .tabs{
+        text-align: left;
+          .tab{
+              list-style: none;
+              font-size: 1.5em;
+          }
+      }
+  }
+
+}
+
+}
+
+// media queries under 576
+
+@media (max-width: 576px){
+  .profile-side-panel {
+  .prof-img {
+    width: 60%;
+  }
+
+  .earning-history_container{
+    width: 100%;
+      .coin-icon{
+          width: 80px;
+      }
+  }
+
+  .my-message-btn_container{
+    width: 100%;
+      .my-message-btn{
+        width: 100%;
+      }
+  }
+
+  .tabs_container{
+    width: 100%;
+  }
+
+}
+}

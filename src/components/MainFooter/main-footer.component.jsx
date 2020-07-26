@@ -5,13 +5,11 @@ import blog from "../../assets/blog.png";
 function MainFooter(props) {
   return (
     <div
-      className={`${
-        props.path == "/add-course" || props.path == "/view-course"
-          ? "main-footer"
-          : props.path == "/profile"||props.path == "/courses"
-          ?"main-footer-diff"
-          :""
-      } mt-5 ${props.path == "/course"||props.path == "/" ? "d-none" : ""}`}
+      className={`main-footer ${
+        props.path == "/profile" || props.path == "/courses"
+          ? "main-footer-diff"
+          : ""
+      } mt-5 ${props.path == "/course" || props.path == "/" ? "d-none" : ""}`}
     >
       <div className="footer-sections_container  d-flex mx-auto">
         <div className="footer-section footer-about">
@@ -79,11 +77,12 @@ function MainFooter(props) {
           </div>
         </div>
       </div>
-      {
-          props.path == "/profile"||props.path == "/courses"?
-          <p className="copyright mx-auto">Copyright &copy; 2020 MasterStudy Theme by <a href="#">Stylemix Themes</a></p>
-          :null
-      }
+      {props.path == "/profile" || props.path == "/courses" ? (
+        <p className="copyright mx-auto">
+          Copyright &copy; 2020 MasterStudy Theme by{" "}
+          <a href="#">Stylemix Themes</a>
+        </p>
+      ) : null}
     </div>
   );
 }

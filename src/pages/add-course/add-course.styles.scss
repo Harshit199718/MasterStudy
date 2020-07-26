@@ -117,3 +117,133 @@
         max-width: 25%;
     }
 }
+
+// media queries for devices under 768
+
+@media (max-width: 768px){
+    .add-course{
+        width: 100%;
+        flex-wrap: wrap;
+    
+        .add-course-details_container{
+    
+            .user-and-category_container{
+                .user_container,.add-co-instrucor_container{
+                    .user-img{
+                        width: 60px;
+                        height: 60px;
+                    }
+    
+                    .co-instructor_container{
+                        .add_container{
+                            width: 35px;
+                            height: 35px;
+
+                            .add{
+                                font-size: 4em;
+                            }
+                        }
+                    }
+                }
+    
+                .category_container{
+                    .category-icon{
+    
+                        .fa{
+                            font-size: 5em;
+                        }
+                    }
+    
+                }
+    
+                .rating_container{
+                    .rating{
+                        font-size: 2em;
+                    }
+    
+                    .total-reviews{
+                        font-size: 2em;
+                    }
+                }
+            }
+    
+            .publish-course-btn{
+                font-size: 1.5em;
+            }
+        }
+    
+        .add-course-sidebar_container{
+            padding: 0 20px;
+        }
+
+        &>div{
+            min-height: 80vh;
+            flex: 0 0 100%!important;
+            max-width: 100%!important;
+        }
+    }
+}
+
+
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+    .add-course{
+        width: 100%;
+        flex-wrap: wrap;
+    
+        .add-course-details_container{
+    
+            .user-and-category_container{
+                flex-wrap: wrap;
+                &>div{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin: 0!important;
+                    margin-top: 10px!important;
+                    justify-content: center;
+
+                }
+                .user_container,.add-co-instrucor_container{
+    
+                    .co-instructor_container{
+                        justify-content: center;
+                    }
+                }
+    
+                .rating_container{
+                    .rating{
+                        justify-content: center;
+                    }
+    
+                    .total-reviews{
+                        text-align: center;
+                    }
+                }
+            }
+
+            .tabs_container{
+                flex-wrap: wrap;
+                &>div{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+    
+            .publish-course-btn{
+                font-size: 1.5em;
+            }
+        }
+    
+        .add-course-sidebar_container{
+            padding: 0 20px;
+        }
+
+        &>div{
+            min-height: 80vh;
+            flex: 0 0 100%!important;
+            max-width: 100%!important;
+        }
+    }
+}

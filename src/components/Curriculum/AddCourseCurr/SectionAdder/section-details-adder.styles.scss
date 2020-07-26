@@ -135,3 +135,21 @@
         border-color: #415AC8!important;
     }
 }
+
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+    .section-details-adder{
+        background: #fff;
+        border-radius: 5px;
+    
+        .section-tabs-container{
+            flex-wrap: wrap;
+            .section-tab-toggler{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

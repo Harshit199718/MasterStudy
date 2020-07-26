@@ -23,3 +23,24 @@
             border-radius: 20px;
     }
 }
+
+// media queries for devices under 768
+
+@media (max-width: 768px){
+    .review{
+        .review_header{
+            font-size: 1.5em;
+        }
+    
+        .rating_container{
+            .fa{
+                font-size: 1.5em;
+            }
+        }
+    
+        .add-review-btn{
+                font-size: 1.3em;
+        }
+    }
+    
+}

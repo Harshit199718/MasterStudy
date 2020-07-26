@@ -207,3 +207,127 @@
         }
     }
 }
+
+
+// media queries for devices under 768
+
+@media (max-width: 768px){
+    .view-course-sidebar{
+        border-top: 2px solid #aaaaaa;
+        padding: 20px;
+        .add-to-wish-list_container{
+            .wish-list-icon{
+                width: 60px;
+                height: 60px;
+    
+                .fa{
+                    font-size: 3em;
+                }
+            }
+
+            .add-to-wishlist{
+                font-size: 2em;
+            }
+        }
+    
+        .continue-btn{
+            font-size: 2em;
+        }
+    
+        .course-score-box{
+            border: 1px solid #ebebeb;
+            border-radius: 4px;
+            .score{
+                font-size: 2em;
+            }
+    
+            .completed-feature_container{
+                .completed-feature{
+                    .fa{
+                        font-size: 3em;
+                    }
+    
+                    .feature{
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    
+        .download-certificate_container{
+            cursor: pointer;
+    
+            .fa{
+                font-size: 2.6em;
+            }
+    
+            .download-certificate{
+                font-size: 2em;
+            }
+        }
+    
+        .course-details{
+            .detail{
+                .total{
+                    font-size: 2em;
+                }
+        
+                .fa{
+                    font-size: 3em;
+                }
+            }
+        }
+    
+        .other-courses-and-working-hours_container{
+    
+            .other-courses_container{
+                .other-course{
+                    justify-content: flex-start!important;
+                    .other-course-thumbnail{
+                        width: 80px;
+                        height: 80px;
+                    }
+    
+                    .other-course-desc{
+                        .other-course-title{
+                            font-size: 1.6em;
+                        }
+    
+                        .course-price-btn{
+                            font-size: 1.4em;
+                            margin-top: 10px;
+                        }
+    
+                        .course-instructor{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+    
+            .archive_container{
+                .archive_header{
+                    font-size: 2.2em;
+                }   
+            }
+    
+            .working-hours_container{
+                .working-hours_header{
+                    font-size: 2.2em;
+                }       
+    
+                .shedule_container{
+                    border-bottom-width: 2px;
+                    h5{
+                        font-size: 1.6em;
+                        padding: 10px 0;
+                    }
+    
+                    .closed-btn{
+                            font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}

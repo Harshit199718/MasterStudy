@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './courses.styles.scss'
 import CourseCard from '../../components/CourseCard/course-card.component'
 
 export class Courses extends Component {

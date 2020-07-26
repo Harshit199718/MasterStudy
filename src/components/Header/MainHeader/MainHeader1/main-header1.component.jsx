@@ -92,6 +92,9 @@ function MainHeader1(props) {
           </div>
         </div>
         <div className="user_container d-flex justify-content-center align-items-center">
+        <div className="search justify-content-center align-items-center">
+            <i className="fa fa-search text-white"></i>
+          </div>
           <div className="user d-flex justify-content-center align-items-center">
             <i className="fa fa-user-o text-white"></i>
           </div>

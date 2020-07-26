@@ -27,6 +27,7 @@
         padding: 15px 10px;
         background: #fff;
         box-shadow: 0 0 10px 8px rgba(221,221,221,.6);
+        width: 100%;
 
         .attach-files-btn_container{
             width: fit-content;
@@ -109,6 +110,72 @@
 
                 .attachments{
                     font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+// media queries for devices 
+
+@media (max-width: 576px){
+    .assignment-lesson{
+    
+        .section-content-description{
+            font-size: 1.2em;
+            line-height: 20px;
+        }
+    
+        .show-requirements-btn{
+            font-size: 1.5em;
+        }
+
+        .assignment-requirements{
+            p{
+                font-size: 1.3em;
+            }
+        }
+    
+        .text-editor_container{
+            width: 100%;
+    
+            .attach-files-btn_container{
+    
+                .attach-files-btn{
+                    font-size: 1em;
+                }
+            }
+        }
+    
+        .assignment-start-btn,.send-attachments-btn, .attach-files-btn{
+            width: 100%;
+            font-size: 1.3em;
+        }
+    
+        .attachments-sent{
+            width: 100%;
+            .assignment-pending_container{
+                width: 100%;
+    
+                .hour-glass_container{
+
+                    .fa{
+                        font-size: 1.3em;
+                    }
+                }
+    
+                .assignment-pending-text{
+                    font-size: 1.3em;
+                    font-weight: 900;
+                }
+            }
+    
+            .attachments_container{
+    
+                &>div{
+                    .attachments{
+                        font-size: 1.8em;
+                    }
                 }
             }
         }

@@ -7,7 +7,6 @@
     padding: 22px 15px 17px 15px;
     
     .logo_container{
-        width: 253px;
         flex: 0 0 25%;
         max-width: 25%;
         padding: 0 15px;
@@ -113,4 +112,60 @@
         }
     }
 
+}
+
+
+// media queries for devices under 768
+
+@media (max-width: 768px){
+    .course-header{
+        background: #273044;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    
+        .back-to-dashboard_container{
+            margin-top: 15px;
+    
+            h5{
+                font-size: 1.8em;
+            }
+    
+            a{
+                font-size: 1.6em;
+            }
+        }
+    
+        .right-panel{
+            justify-content: space-between;
+            margin-top: 20px;
+    
+            .username_container{
+                margin-right: auto;
+    
+                h5{
+                    font-size: 1.3em;
+                }
+    
+                .user-dropdown{
+    
+                    a{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+    
+            &>.fa{
+                font-size: 3em;
+            }
+        }
+
+        &>*{
+            flex: 0 0 100%!important;
+            max-width: 100%!important;
+        }
+    
+    }
 }

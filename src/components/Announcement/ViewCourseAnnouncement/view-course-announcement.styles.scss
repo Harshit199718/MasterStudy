@@ -26,3 +26,28 @@
         }
     }
 }
+
+// media queries for devices under 768
+
+@media (max-width: 768px){
+    .view-course-announcement{
+        .announcement_container{
+    
+            .date-of-announcement{
+                font-size: 1.2em;
+            }
+    
+            .announcement-details_container{
+                .announcement-number{
+                    font-size: 1.2em;
+                }
+    
+                .announcement{
+                    .announcement-heading,.announcement-description{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -32,16 +32,6 @@ export class SlideLesson extends Component {
         <h2 className="section-content-title">{this.props.sectionHead}</h2>
 
         <div className="slider-images_container">
-          <i
-            className="fa fa-angle-left"
-            onClick={() =>
-              this.setState({
-                selectedIndex:
-                  selectedIndex < 1 ? selectedIndex : selectedIndex - 1,
-              })
-            }
-          ></i>
-          {/* <iframe src={`https://view.officeapps.live.com/op/embed.aspx?src=[https://localhost:3000/${coursedes}]`} frameborder="0"></iframe> */}
           <iframe
             src="https://onedrive.live.com/embed?cid=2D70A5A39C34FD1A&amp;resid=2D70A5A39C34FD1A%21106&amp;authkey=APYU06mFzR4ohIw&amp;em=2&amp;wdAr=1.7777777777777777"
             width="100%"
@@ -58,29 +48,7 @@ export class SlideLesson extends Component {
             </a>
             .
           </iframe>
-          {/* {images.map((image) => {
-            return (
-              <img
-                src={image}
-                alt=""
-                style={{
-                  transform: `translateX(-${selectedIndex * 100}%)`,
-                  transition: ".5s",
-                }}
-              />
-            );
-          })} */}
-          <i
-            className="fa fa-angle-right"
-            onClick={() =>
-              this.setState({
-                selectedIndex:
-                  selectedIndex < images.length - 1
-                    ? selectedIndex + 1
-                    : selectedIndex,
-              })
-            }
-          ></i>
+
         </div>
 
         <p className="section-content-description mt-2">

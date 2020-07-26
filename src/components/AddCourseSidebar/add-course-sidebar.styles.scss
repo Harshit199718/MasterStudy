@@ -137,3 +137,81 @@
         }
     }
 }
+
+// media queries for devices under 576
+
+@media (max-width: 576px){
+    .add-course-sidebar{
+        .add-to-wishlist_container{
+
+            .add-to-wishlist-icon{
+                width: 40px;
+                height: 40px;
+    
+                .fa{
+                    font-size: 2em;
+                }
+            }
+    
+            .add-to-wishlist-text{
+                font-size: 2em;
+            }
+        }
+    
+        .add-price-btn{
+            font-size: 2em;
+        }
+    
+        .prerequisite-courses-details_container{
+            .prerequisite-courses_header{
+                font-size: 2em;
+            }
+    
+            .prerequisite-dropdown_container{
+
+                .fa{
+                    font-size: 2.2em;
+                }
+    
+                input{
+                    font-size: 1.5em;
+                }
+    
+                .prerequisites-dropdown{
+    
+                    li{
+                        font-size: 1.6em;
+                    }
+                }
+            }
+    
+            .prerequisite-courses-percentage_header{
+                font-size: 2em;
+            }
+    
+            .prerequisites-percentage-input{
+                font-size: 1.5em;
+            }
+        }
+    
+        .course-details{
+            .disabled-feature{
+                padding: 20px 5px;
+                opacity: .5;
+    
+                .detail{
+                    font-size: 1.5em;
+    
+                    span{
+                        font-weight: 900;
+                    }
+                }
+    
+                .fa{
+                    color: #195EC8;
+                    font-size: 2.2em;
+                }
+            }
+        }
+    }
+}

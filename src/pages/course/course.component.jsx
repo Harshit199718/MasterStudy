@@ -10,7 +10,7 @@ export class Course extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      rightSidebar: true,
+      rightSidebar: window.innerWidth<=768?false:true,
       questionsSidebar: false,
       toPlay: "Realistic Graphic on...",
       sectionHead:'Realistic Graphic on...',
@@ -33,7 +33,7 @@ export class Course extends Component {
           ></i>
           <div className={`questions-sidebar_container ${toPlay=="Live Stream Lesson"?"d-none":""}`}
             style={
-              !questionsSidebar ? { flex: "0", maxWidth: "0" } : { flex: "0 0 25%" }
+              !questionsSidebar ? { flex: "0", maxWidth: "0" } : { flex: window.innerWidth<576?"0 0 90%":"0 0 25%",maxWidth:window.innerWidth<576?"100%":"25%",width:window.innerWidth<576?"90%":"25%" }
             }
           >
             <QuestionsSidebar/>
@@ -43,8 +43,8 @@ export class Course extends Component {
             style={
               !rightSidebar && !questionsSidebar ||toPlay=="Live Stream Lesson"
                 ? { flex: "0 0 100%", maxWidth: "100%" }
-                : !rightSidebar && questionsSidebar||rightSidebar && !questionsSidebar?{ flex: "0 0 75%", maxWidth: "75%" }
-                :rightSidebar && questionsSidebar?{ flex: "0 0 50%", maxWidth: "50%" }:{}
+                : !rightSidebar && questionsSidebar||rightSidebar && !questionsSidebar?{ flex: window.innerWidth<768?"0 0 100%":"0 0 75%", maxWidth: window.innerWidth<768?"100%":"75%" }
+                :rightSidebar && questionsSidebar?{ flex: window.innerWidth<768?"0 0 100%":"0 0 50%", maxWidth:window.innerWidth<768?"100%":"50%" }:{}
             }
           >
 
@@ -69,7 +69,7 @@ export class Course extends Component {
           <div
             className={`${toPlay == "Live Stream Lesson"?"live-stream-sidebar":"course-sidebar_container"}`}
             style={
-              !rightSidebar ? { flex: "0", maxWidth: "0" } : { flex: "0 0 25%" }
+              !rightSidebar ? { flex: "0", maxWidth: "0" } : { flex: window.innerWidth<576?"0 0 90%":"0 0 25%",maxWidth: window.innerWidth<576?"100%":"25%",width:window.innerWidth<576?"90%":"25%"}
             }
           >
             <CourseSidebar setToPlay={(obj) => this.setState(obj)} />
