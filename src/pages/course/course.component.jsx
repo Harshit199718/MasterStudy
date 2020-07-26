@@ -5,6 +5,8 @@ import "./course.styles.scss";
 import CourseContent from "../../components/CourseContent/course-content.component";
 import CourseFooter from "../../components/CourseFooter/course-footer.component";
 import QuestionsSidebar from "../../components/QuestionsSidebar/questions-sidebar.component";
+import RightPanel from "../../components/RightPanel/right-panel.component";
+import CourseProgressPopup from "../../components/Popups/CourseProgress/course-progress-popup.component";
 
 export class Course extends Component {
   constructor(props) {
@@ -15,11 +17,12 @@ export class Course extends Component {
       toPlay: "Realistic Graphic on...",
       sectionHead:'Realistic Graphic on...',
       lectureNo:1,
-      sectionType:'Introduction'
+      sectionType:'Introduction',
+      courseProgress:false
     };
   }
   render() {
-    const { rightSidebar,questionsSidebar, toPlay,lectureNo,sectionType } = this.state;
+    const { rightSidebar,questionsSidebar, toPlay,lectureNo,sectionType,courseProgress } = this.state;
     console.log(this.state)
     return (
       <div className="course">
@@ -87,6 +90,8 @@ export class Course extends Component {
 
           
         </main>
+        <CourseProgressPopup courseProgress={courseProgress} showProgressPopup={(obj) => this.setState(obj)}/>
+
       </div>
     );
   }

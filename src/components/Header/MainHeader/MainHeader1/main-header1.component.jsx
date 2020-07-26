@@ -5,7 +5,13 @@ function MainHeader1(props) {
   return (
     <div
       className={`main-header1 ${
-        props.path !== "/profile" && props.path !== "/courses" ? "d-none" : ""
+        props.path !== "/profile" &&
+        props.path !== "/courses" &&
+        props.path !== "/quizz" &&
+        props.path !== "/add-course" &&
+        props.path !== "/view-course"
+          ? "d-none"
+          : ""
       }`}
     >
       <div className="logo-and-links_container d-flex justify-content-between align-items-center">
@@ -26,14 +32,19 @@ function MainHeader1(props) {
 
             <div className="sub-menu_container py-5 px-2 d-flex justify-content-between align-items-center">
               <div className="sub-menu-links_container d-flex align-items-center">
-                  <a href="#">
-                    <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
-                        <i className="fa fa-arrow-right"></i><span>3D Printing Concept</span>
-                    </h5>
-                  </a>
+                <a href="#">
+                  <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
+                    <i className="fa fa-arrow-right"></i>
+                    <span>3D Printing Concept</span>
+                  </h5>
+                </a>
               </div>
               <div className="serach-course-input_container d-flex align-items-center">
-                <input type="text" className="search-course-input" placeholder="Search Courses" />
+                <input
+                  type="text"
+                  className="search-course-input"
+                  placeholder="Search Courses"
+                />
                 <i className="fa fa-search"></i>
               </div>
             </div>
@@ -44,14 +55,19 @@ function MainHeader1(props) {
             <h5 className="link-text m-0">Computer Science</h5>
             <div className="sub-menu_container py-5 px-2 d-flex justify-content-between align-items-center">
               <div className="sub-menu-links_container d-flex align-items-center">
-                  <a href="#">
-                    <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
-                        <i className="fa fa-arrow-right"></i><span>3D Printing Concept</span>
-                    </h5>
-                  </a>
+                <a href="#">
+                  <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
+                    <i className="fa fa-arrow-right"></i>
+                    <span>3D Printing Concept</span>
+                  </h5>
+                </a>
               </div>
               <div className="serach-course-input_container d-flex align-items-center">
-                <input type="text" className="search-course-input" placeholder="Search Courses" />
+                <input
+                  type="text"
+                  className="search-course-input"
+                  placeholder="Search Courses"
+                />
                 <i className="fa fa-search"></i>
               </div>
             </div>
@@ -61,14 +77,19 @@ function MainHeader1(props) {
             <h5 className="link-text m-0">Health & Fitness</h5>
             <div className="sub-menu_container py-5 px-2 d-flex justify-content-between align-items-center">
               <div className="sub-menu-links_container d-flex align-items-center">
-                  <a href="#">
-                    <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
-                        <i className="fa fa-arrow-right"></i><span>3D Printing Concept</span>
-                    </h5>
-                  </a>
+                <a href="#">
+                  <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
+                    <i className="fa fa-arrow-right"></i>
+                    <span>3D Printing Concept</span>
+                  </h5>
+                </a>
               </div>
               <div className="serach-course-input_container d-flex align-items-center">
-                <input type="text" className="search-course-input" placeholder="Search Courses" />
+                <input
+                  type="text"
+                  className="search-course-input"
+                  placeholder="Search Courses"
+                />
                 <i className="fa fa-search"></i>
               </div>
             </div>
@@ -78,21 +99,26 @@ function MainHeader1(props) {
             <h5 className="link-text m-0">Multi-media</h5>
             <div className="sub-menu_container py-5 px-2 d-flex justify-content-between align-items-center">
               <div className="sub-menu-links_container d-flex align-items-center">
-                  <a href="#">
-                    <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
-                        <i className="fa fa-arrow-right"></i><span>3D Printing Concept</span>
-                    </h5>
-                  </a>
+                <a href="#">
+                  <h5 className="sub-menu-link m-0 mr-5 d-flex align-items-center">
+                    <i className="fa fa-arrow-right"></i>
+                    <span>3D Printing Concept</span>
+                  </h5>
+                </a>
               </div>
               <div className="serach-course-input_container d-flex align-items-center">
-                <input type="text" className="search-course-input" placeholder="Search Courses" />
+                <input
+                  type="text"
+                  className="search-course-input"
+                  placeholder="Search Courses"
+                />
                 <i className="fa fa-search"></i>
               </div>
             </div>
           </div>
         </div>
         <div className="user_container d-flex justify-content-center align-items-center">
-        <div className="search justify-content-center align-items-center">
+          <div className="search justify-content-center align-items-center">
             <i className="fa fa-search text-white"></i>
           </div>
           <div className="user d-flex justify-content-center align-items-center">

@@ -9,12 +9,12 @@ import ViewCourse from './pages/view-course/view-course.component';
 import AddCourse from './pages/add-course/add-course.component';
 import MainFooter from './components/MainFooter/main-footer.component';
 import MainHeader1 from './components/Header/MainHeader/MainHeader1/main-header1.component';
+import Quizz from './components/CourseContent/Quiz/quizz.component';
 
 function App(props) {
   return (
     <div className="App">
       <Router>
-        <RightPanel/>
           <MainHeader1 path={window.location.pathname}/>
         <Switch>
           <Route path='/course' component={Course} />
@@ -22,8 +22,11 @@ function App(props) {
           <Route path='/profile' component={Profile} />
           <Route path='/view-course' component={ViewCourse} />
           <Route path='/add-course' component={AddCourse} />
+          <Route path='/quizz' render={()=> <Quizz sectionHead="Final Middle Quizz" sectionType="Quizzes & Assignments" lectureNo="3" />} />
         </Switch>
           <MainFooter path={window.location.pathname} />
+        <RightPanel/>
+
       </Router>
     </div>
   );

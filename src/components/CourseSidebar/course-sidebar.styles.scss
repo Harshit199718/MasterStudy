@@ -116,3 +116,9 @@
     transition-property:max-height!important;
     transition-duration: 2s;
 }
+
+@media (max-width: 576px){
+    .course-sidebar{
+        min-height: 100%!important;
+    }
+}

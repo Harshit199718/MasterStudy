@@ -91,6 +91,14 @@
                     background: lightseagreen;
                 }
 
+                .to-enter{
+                    button{
+                        border: none;
+                        outline: none;
+                        background: none;
+                    }
+                }
+
                 .pair{
                     display: flex;
                     justify-content: space-between;
@@ -161,6 +169,7 @@
     .quizz{
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         
         .quizz-header{
@@ -186,7 +195,7 @@
         }
     
         &>.quizz-description{
-    
+            width: 100%!important;
             padding: 10px 20px;
             order: 1;
     

@@ -30,9 +30,9 @@ export class Quizz extends Component {
 
         {startQuizz ? <Quizzes /> : null}
         
-        <div className='quizz-footer_container ml-auto'>
+        {/* <div className='quizz-footer_container ml-auto'>
           <CourseFooter color="#000" />
-        </div>
+        </div> */}
       </div>
     );
   }

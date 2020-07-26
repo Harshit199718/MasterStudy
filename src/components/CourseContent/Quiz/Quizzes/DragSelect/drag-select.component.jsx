@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
 
 export class DragSelect extends Component {
+
+    allowDrop = (e) =>  {
+        e.preventDefault();
+      }
+
+    drag = (e) => {
+        e.dataTransfer.setData("text", e.target.id);
+      }
+
+    drop = (e) => {
+        e.preventDefault();
+        var data = e.dataTransfer.getData("text");
+        e.target.appendChild(document.getElementById(data));
+      }
     render() {
         return (
             <div className='mb-4'>
@@ -13,7 +27,7 @@ export class DragSelect extends Component {
                         <div className="given">
                             Bill
                         </div>
-                        <div className="to-enter">
+                        <div className="to-enter" onDrop={(e)=>this.drop(e)} onDragOver={(e)=>this.allowDrop(e)}>
 
                         </div>
                     </div>
@@ -21,7 +35,7 @@ export class DragSelect extends Component {
                         <div className="given">
                             Steve
                         </div>
-                        <div className="to-enter">
+                        <div className="to-enter" onDrop={(e)=>this.drop(e)} onDragOver={(e)=>this.allowDrop(e)}>
 
                         </div>
                     </div>
@@ -29,7 +43,7 @@ export class DragSelect extends Component {
                         <div className="given">
                             Mark
                         </div>
-                        <div className="to-enter">
+                        <div className="to-enter" onDrop={(e)=>this.drop(e)} onDragOver={(e)=>this.allowDrop(e)}>
 
                         </div>
                     </div>
@@ -37,17 +51,17 @@ export class DragSelect extends Component {
                         <div className="given">
                             Larry
                         </div>
-                        <div className="to-enter">
+                        <div className="to-enter" onDrop={(e)=>this.drop(e)} onDragOver={(e)=>this.allowDrop(e)}>
 
                         </div>
                     </div>
                     
                 </div>
                 <div className="drag-btn_container mt-3">
-                    <button className='drag-btn'>Gates</button>
-                    <button className='drag-btn'>Zuckerberg</button>
-                    <button className='drag-btn'>Jobs</button>
-                    <button className='drag-btn'>Page</button>
+                    <button id="draggable-btn1" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Gates</button>
+                    <button id="draggable-btn2" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Zuckerberg</button>
+                    <button id="draggable-btn3" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Jobs</button>
+                    <button id="draggable-btn4" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Page</button>
                 </div>
             </div>
         )

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./course-sidebar.styles.scss";
 import Section from "./Section/section.component";
 import CourseProgress from "./CourseProgress/course-progress.component";
+import CourseProgressPopup from "../Popups/CourseProgress/course-progress-popup.component";
+import RightPanel from "../RightPanel/right-panel.component";
 
 const sections = [
   {
@@ -59,7 +61,8 @@ export class CourseSidebar extends Component {
           })}
         </div>
 
-        <CourseProgress />
+        <CourseProgress showProgressPopup={this.props.setToPlay}/>
+
       </div>
     );
   }

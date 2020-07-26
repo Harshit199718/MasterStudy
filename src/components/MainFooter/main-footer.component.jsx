@@ -6,7 +6,7 @@ function MainFooter(props) {
   return (
     <div
       className={`main-footer ${
-        props.path == "/profile" || props.path == "/courses"
+        props.path == "/profile" || props.path == "/courses"|| props.path == "/quizz"
           ? "main-footer-diff"
           : ""
       } mt-5 ${props.path == "/course" || props.path == "/" ? "d-none" : ""}`}

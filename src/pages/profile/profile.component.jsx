@@ -5,6 +5,7 @@ import InstructorBio from '../../components/InstructorBio/instructor-bio.compone
 import Certificates from '../../components/Certificates/certificates.component'
 import EditProfile from '../../components/EditProfile/edit-profile.component'
 import Assignment from '../../components/Assignment/assignment.component'
+import RightPanel from '../../components/RightPanel/right-panel.component'
 
 export class Profile extends Component {
 
@@ -82,6 +83,8 @@ export class Profile extends Component {
                         }
                     </div>
                 </div>
+        <RightPanel/>
+
             </div>
         )
     }

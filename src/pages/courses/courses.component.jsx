@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './courses.styles.scss'
 import CourseCard from '../../components/CourseCard/course-card.component'
+import RightPanel from '../../components/RightPanel/right-panel.component'
 
 export class Courses extends Component {
     render() {
@@ -32,6 +33,8 @@ export class Courses extends Component {
                         <CourseCard/>
                     </div>
                 </div>
+        <RightPanel/>
+
             </div>
         )
     }

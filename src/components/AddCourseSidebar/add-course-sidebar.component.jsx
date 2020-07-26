@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import './add-course-sidebar.styles.scss'
+import "./add-course-sidebar.styles.scss";
 import DropInput from "../DropInput/drop-input.component";
 
 export class AddCourseSidebar extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-            prerequisiteSearch:''
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      prerequisiteSearch: "",
+      addedPrice: "",
+      priceInput: false,
+    };
+  }
   render() {
-      const {prerequisiteSearch} = this.state
+    const { prerequisiteSearch, addedPrice, priceInput } = this.state;
     return (
       <div className="add-course-sidebar">
         <div className="add-to-wishlist_container mb-3 d-flex align-items-center">
@@ -20,7 +22,31 @@ export class AddCourseSidebar extends Component {
           <h5 className="add-to-wishlist-text m-0">Add to wishlist</h5>
         </div>
 
-        <button className="add-price-btn text-uppercase mb-3">Add Price</button>
+        <button
+          className="add-price-btn text-uppercase mb-3"
+          onFocus={() => {
+            this.setState({ priceInput: true })
+            this.priceBox.focus()
+          }}
+          onBlur={() => this.setState({ priceInput: false })}
+        >
+          {addedPrice ? addedPrice + "$" : "Add Price"}
+          <div
+            className="add-price-input_container p-2"
+            style={
+              priceInput
+                ? { opacity: "1", pointerEvents: "visible" }
+                : { opacity: "0", pointerEvents: "none" }
+            }
+          >
+            <input
+              type="text"
+              ref={(priceBox) => (this.priceBox = priceBox)}
+              autoFocus={priceInput}
+              onChange={(e) => this.setState({ addedPrice: e.target.value })}
+            />
+          </div>
+        </button>
         <div className="prerequisite-courses-details_container">
           <h5 className="prerequisite-courses_header mb-3">
             Prerequisites Courses
@@ -31,13 +57,22 @@ export class AddCourseSidebar extends Component {
               placeholder="Add"
               type="text"
               className="add-prerequisite-input"
-              onChange={(e)=>this.setState({prerequisiteSearch: e.target.value})}
+              onChange={(e) =>
+                this.setState({ prerequisiteSearch: e.target.value })
+              }
             />
             <i className="fa fa-angle-down ml-auto"></i>
-            <ul className="prerequisites-dropdown" style={prerequisiteSearch?{opacity:"1",pointerEvents:'visible'}:{}}>
-                <li className="item-1">option 1</li>
-                <li className="item-2">option 2</li>
-                <li className="item-3">option 3</li>
+            <ul
+              className="prerequisites-dropdown"
+              style={
+                prerequisiteSearch
+                  ? { opacity: "1", pointerEvents: "visible" }
+                  : {}
+              }
+            >
+              <li className="item-1">option 1</li>
+              <li className="item-2">option 2</li>
+              <li className="item-3">option 3</li>
             </ul>
           </div>
           <h5 className="prerequisite-courses-percentage_header mb-3">
