@@ -4,6 +4,7 @@ import QuizzDescription from "./QuizzDescription/quizz-description.component";
 import Quizzes from "./Quizzes/quizzes.component";
 import Rating from "./Rating/rating.component";
 import CourseFooter from "../../CourseFooter/course-footer.component";
+import QuizzFooter from "./QuizzFooter/quizz-footer.component";
 
 export class Quizz extends Component {
   constructor(props) {
@@ -15,8 +16,8 @@ export class Quizz extends Component {
   render() {
     const {startQuizz} = this.state
     return (
-      <div className="quizz mr-5">
-        <h5 className="quizz-header mb-0 mt-5 ml-auto">
+      <div className="quizz">
+        <h5 className={`quizz-header mb-0 mt-5 ${this.props.center?"mx-auto":"ml-auto"}`} style={this.props.width?{width:this.props.width}:{}}>
           {this.props.sectionType}, Quiz {this.props.lectureNo}{" "}
         </h5>
         {
@@ -24,15 +25,18 @@ export class Quizz extends Component {
           <Rating countDown={true} />:null
         }
         <QuizzDescription
+          width={this.props.width}
+          center={this.props.center}
           sectionHead={this.props.sectionHead}
           setStartQuizz={(obj) => this.setState(obj)}
+          startQuizz={startQuizz}
         />
 
-        {startQuizz ? <Quizzes /> : null}
+        {startQuizz ? <Quizzes center={this.props.center} width={this.props.width} /> : null}
         
-        {/* <div className='quizz-footer_container ml-auto'>
-          <CourseFooter color="#000" />
-        </div> */}
+        <div className='quizz-footer_container ml-auto'>
+          <QuizzFooter/>
+        </div>
       </div>
     );
   }

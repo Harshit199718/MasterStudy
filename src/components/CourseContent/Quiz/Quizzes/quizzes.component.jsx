@@ -3,6 +3,7 @@ import SingleSelect from "./SingleSelect/single-select.component";
 import MultiSelect from "./MultiSelect/multi-select.component";
 import DragSelect from "./DragSelect/drag-select.component";
 import QuizzResults from "../../../Popups/QuizzResults/quizz-results.component";
+import FillTheBlanks from "./FillTheBlanks/fill-the-blanks.component";
 
 export class Quizzes extends Component {
   constructor(props){
@@ -16,7 +17,8 @@ export class Quizzes extends Component {
     const {quizzResult,openResultPopup} =this.state
     return (
       <div className="quizzes">
-        <div className="quizzes_container ml-auto">
+        <div className={`quizzes_container ${this.props.center?"mx-auto":"ml-auto"}`} style={this.props.width?{width:this.props.width}:{}}>
+          <FillTheBlanks/>
           <MultiSelect />
           <SingleSelect />
           <DragSelect />

@@ -11,9 +11,23 @@ export class DragSelect extends Component {
       }
 
     drop = (e) => {
+            if(e.target.getElementsByTagName("*").length == 0){
+                e.preventDefault();
+                var data = e.dataTransfer.getData("text");
+                e.target.appendChild(document.getElementById(data));
+            }
+      }
+      undoDrop = (e) => {
+            e.preventDefault();
+            var data = e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+  }
+      drop2 = (e) => {
         e.preventDefault();
-        var data = e.dataTransfer.getData("text");
-        e.target.appendChild(document.getElementById(data));
+        // var data = e.dataTransfer.getData("text");
+        // // e.target.appendTo(document.getElementById(data));
+        // document.getElementById("drag-btn_container").appendChild(document.getElementById(data))
+        e.stopPropagation()
       }
     render() {
         return (
@@ -57,11 +71,11 @@ export class DragSelect extends Component {
                     </div>
                     
                 </div>
-                <div className="drag-btn_container mt-3">
-                    <button id="draggable-btn1" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Gates</button>
-                    <button id="draggable-btn2" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Zuckerberg</button>
-                    <button id="draggable-btn3" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Jobs</button>
-                    <button id="draggable-btn4" className='drag-btn' draggable={true} onDragStart={(e)=>this.drag(e)}>Page</button>
+                <div id="drag-btn_container" className="drag-btn_container mt-3" onDrop={(e)=>this.undoDrop(e)} onDragOver={(e)=>this.allowDrop(e)}>
+                    <button id="draggable-btn1" onDrop={(e)=>this.drop2(e)} className='drag-btn' droppable={false} draggable={true} onDragStart={(e)=>this.drag(e)}>Gates</button>
+                    <button id="draggable-btn2" onDrop={(e)=>this.drop2(e)} className='drag-btn' droppable={false} draggable={true} onDragStart={(e)=>this.drag(e)}>Zuckerberg</button>
+                    <button id="draggable-btn3" onDrop={(e)=>this.drop2(e)} className='drag-btn' droppable={false} draggable={true} onDragStart={(e)=>this.drag(e)}>Jobs</button>
+                    <button id="draggable-btn4" onDrop={(e)=>this.drop2(e)} className='drag-btn' droppable={false} draggable={true} onDragStart={(e)=>this.drag(e)}>Page</button>
                 </div>
             </div>
         )

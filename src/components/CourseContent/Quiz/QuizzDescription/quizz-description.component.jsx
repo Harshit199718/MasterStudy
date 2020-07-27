@@ -4,7 +4,7 @@ import Rating from "../Rating/rating.component";
 export class QuizzDescription extends Component {
   render() {
     return (
-      <div className="quizz-description d-flex align-items-center ml-auto">
+      <div className={`quizz-description d-flex align-items-center ${this.props.center?"mx-auto":"ml-auto"}`} style={this.props.width?{width:this.props.width,marginTop:this.props.startQuizz?"-200px":"0"}:{}}>
 
         <div className="quizz-details_container">
           <h2 className="quizz-details-header">{this.props.sectionHead}</h2>

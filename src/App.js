@@ -22,7 +22,7 @@ function App(props) {
           <Route path='/profile' component={Profile} />
           <Route path='/view-course' component={ViewCourse} />
           <Route path='/add-course' component={AddCourse} />
-          <Route path='/quizz' render={()=> <Quizz sectionHead="Final Middle Quizz" sectionType="Quizzes & Assignments" lectureNo="3" />} />
+          <Route path='/quizz' render={()=> <Quizz width="40%" center={true} sectionHead="Final Middle Quizz" sectionType="Quizzes & Assignments" lectureNo="3" />} />
         </Switch>
           <MainFooter path={window.location.pathname} />
         <RightPanel/>
